@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 85vh;
+  width: 100%;
+  gap: 25px;
+}
+
+section h1 {
+  color: GREEN;
+  font-size: clamp(3rem, -7.667rem + 21.333vw, 7rem);
+  text-shadow: 0 0 10px black;
+  text-align: center;
+}
+
+.div-g {
+  max-width: 950px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 50px;
+  background-color: #0c432173;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px rgba(6, 190, 83, 0.226);
+}
+
+#divPrecio h2 {
+  font-size: clamp(1.8rem, 0.067rem + 4.267vw, 2.7rem);
+  color: brown;
+  text-shadow: 0 0 10px black;
+  text-align: center;
+}
+
+#divPrecio p {
+  font-size: clamp(1.4rem, 0.067rem + 4.267vw, 2.7rem);
+  text-align: center;
+  color: white;
+}
+section div img {
+  width: 240px;
+}
+
+section button {
+  background-color: green;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 10px 10px 0px rgba(3, 99, 40, 0.589);
+  width: 40%;
+  transition: all 0.2s ease;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+section button:hover {
+  background-color: rgb(12, 170, 12);
+}
+
+section span {
+  color: white;
+  position: relative;
+  top: 120px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  section button {
+    width: 100%;
+  }
+}
