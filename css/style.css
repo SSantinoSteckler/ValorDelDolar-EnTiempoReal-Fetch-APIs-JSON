@@ -20,7 +20,7 @@ section {
   flex-direction: column;
   min-height: 85vh;
   width: 100%;
-  gap: 25px;
+  gap: 35px;
 }
 
 section h1 {
@@ -38,7 +38,7 @@ section h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 
   padding: 50px;
   background-color: #0c432173;
@@ -48,7 +48,7 @@ section h1 {
 
 #divPrecio h2 {
   font-size: clamp(1.8rem, 0.067rem + 4.267vw, 2.7rem);
-  color: brown;
+  color: rgb(187, 40, 40);
   text-shadow: 0 0 10px black;
   text-align: center;
 }
@@ -71,7 +71,8 @@ section button {
   color: white;
   font-size: 1.5rem;
   box-shadow: 10px 10px 0px rgba(3, 99, 40, 0.589);
-  width: 40%;
+  max-width: 950px;
+  width: 100%;
   transition: all 0.2s ease;
   font-family: 'Bebas Neue', sans-serif;
 }
@@ -80,7 +81,42 @@ section button:hover {
   background-color: rgb(12, 170, 12);
 }
 
-section span {
+.div-g input {
+  height: 60px;
+  padding: 35px 10px;
+  border: solid 3px black;
+  width: 100%;
+  font-size: clamp(1.5rem, 0.25rem + 4vw, 3rem);
+  border-radius: 12px;
+}
+.div-g h2 {
+  font-size: clamp(1.8rem, 0.25rem + 4vw, 3rem);
+  color: #007f00;
+  text-shadow: 0 0 10px black;
+  text-align: center;
+}
+
+#divCambio p {
+  font-size: clamp(1.2rem, 0.25rem + 4vw, 3rem);
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#divCambio p span {
+  font-size: clamp(1.6srem, 0.7rem + 4.8vw, 4rem);
+  color: red;
+  text-wrap: nowrap;
+  align-items: center;
+}
+
+.bySteckler {
   color: white;
   position: relative;
   top: 70px;
@@ -92,5 +128,15 @@ section span {
 @media screen and (max-width: 768px) {
   section button {
     width: 100%;
+  }
+
+  .div-g {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #divCambio p {
+    flex-direction: column;
   }
 }
